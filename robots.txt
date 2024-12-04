@@ -1,0 +1,4 @@
+Sitemap: https://join.filmzie.com/sitemap.xml
+User-agent: *
+Allow: /
+Disallow:
