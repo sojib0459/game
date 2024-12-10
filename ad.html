@@ -116,56 +116,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header and Footer Example</title>
+    <title>Sticky Ad at Bottom</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
         header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: black; /* Black background */
-            padding: 10px 0;
+            background-color: black;
             text-align: center;
             z-index: 9999;
         }
         header img {
-            max-width: 18%;
+            max-width: 100%;
             height: auto;
         }
         main {
-            flex: 1; /* Takes up remaining space between header and footer */
-            margin-top: 120px; /* Adjust this to give space for the sticky header */
             padding: 20px;
+            margin-top: 120px; /* Adjust for sticky header */
+            margin-bottom: 60px; /* Adjust for sticky ad */
             text-align: center;
         }
-        footer {
-            background-color: black; /* Black background */
-            color: white; /* White text */
+        .sticky-ad {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
+        }
+        .sticky-ad img {
+            max-width: 7%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="sticky-ad">
         <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt="Ad">
-    </header>
-    <main>
-        <h1>Welcome to the Website</h1>
-        <p>Scroll down to see the sticky header remain in place.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae urna at arcu efficitur posuere. Praesent non justo in ligula feugiat fermentum. Nulla facilisi.</p>
-        <p>Keep scrolling and notice the ad stays visible at the top!</p>
-    </main>
-    <footer>
-        &copy; 2024 Your Website Name. All Rights Reserved.
+    </div>
+</body>
+</html>
     </footer>
 </body>
 </html>
