@@ -17,18 +17,29 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo img {
+            height: 50px; /* Default height for the logo */
+            width: auto; /* Keeps the aspect ratio */
+        }
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
         }
         header nav a {
             color: white;
-            margin: 0 10px;
             text-decoration: none;
             font-weight: 700;
+            margin: 0 10px;
         }
         header nav a:hover {
             text-decoration: underline;
         }
         .hero {
-            background-image: url('https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww');
+            background-image: url('https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww/1500x500');
             background-size: cover;
             background-position: center;
             color: white;
@@ -94,24 +105,72 @@
             padding: 20px;
             text-align: center;
         }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header nav {
+                justify-content: center;
+                margin-top: 10px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 10px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 0.9rem;
+            }
+            header nav a {
+                margin: 5px 0;
+            }
+        }
+
+        /* Full clickable area */
+        .hero-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo"><a href="#!"><img class="img-fluid" src="assets/img/amazon-job-available.png" alt="amazon-job-available" /></a></div>
+        <div class="logo">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuTcGmmAzEEUX-4wqn5dTwimG2t-ziDTwi2LrUQ6whgSUNtGSL7hRhBFNRPiCjz4wAZG28Yd88vgZ3Vj6AZ8Tzpb18zcjz5ovdUAXu-LIxkQvS-02zNku-bho-fzeeuDj_mJwmrKsei7sGpV8V0mnpfR8f8o1Mtt52rXNQOYX3W-0hZSzduMTQkeCzbfA/s1600/amazon-job-available.png" alt="Your Company Logo">
+        </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Jobs</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="https://www.gn3atrk.com/HWKDJ5H/79L4TR2/?sub1=sojib">Home</a>
+            <a href="https://www.gn3atrk.com/HWKDJ5H/79L4TR2/?sub1=sojib">Jobs</a>
+            <a href="https://www.gn3atrk.com/HWKDJ5H/79L4TR2/?sub1=sojib">About Us</a>
+            <a href="https://www.gn3atrk.com/HWKDJ5H/79L4TR2/?sub1=sojib">Contact</a>
         </nav>
     </header>
 
-    <div class="hero">
-        <h1>Join Our Team</h1>
-        <p>Find your next career opportunity and help us make a difference.</p>
-        <button>Search Jobs</button>
-    </div>
+    <a href="https://www.gn3atrk.com/HWKDJ5H/79L4TR2/?sub1=sojib" class="hero-link">
+        <div class="hero">
+            <h1>Join Our Team</h1>
+            <p>Find your next career opportunity and help us make a difference.</p>
+            <button>Search Jobs</button>
+        </div>
+    </a>
 
     <div class="content">
         <h2>Why Work With Us?</h2>
@@ -119,23 +178,23 @@
             <div class="card">
                 <h3>Innovative Culture</h3>
                 <p>We foster creativity and innovation in everything we do.</p>
-                <a href="#">Learn More</a>
+                <a href="https://www.gn3atrk.com/HWKDJ5H/79L4TR2/?sub1=sojib">Learn More</a>
             </div>
             <div class="card">
                 <h3>Great Benefits</h3>
                 <p>We offer competitive benefits to ensure our employees thrive.</p>
-                <a href="#">Learn More</a>
+                <a href="https://www.gn3atrk.com/HWKDJ5H/79L4TR2/?sub1=sojib">Learn More</a>
             </div>
             <div class="card">
                 <h3>Global Opportunities</h3>
                 <p>Work with talented professionals from around the world.</p>
-                <a href="#">Learn More</a>
+                <a href="https://www.gn3atrk.com/HWKDJ5H/79L4TR2/?sub1=sojib">Learn More</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Your Amazon Company. All rights reserved.</p>
     </footer>
 </body>
 </html>
